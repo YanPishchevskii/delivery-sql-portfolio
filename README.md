@@ -7,13 +7,6 @@
 `users`, `couriers`, `products`, `orders` (с массивом `product_ids`),
 `user_actions` (действия клиента), `courier_actions` (действия курьера).
 
-## Как запустить
-```bash
-createdb delivery
-psql -d delivery -f 01_schema/schema.sql -f 02_seed/seed.sql
-psql -d delivery -f 03_queries/basic/01_avg_orders_per_user.sql
-```
-
 ## Что внутри
 ### basic
 | Файл | Бизнес-вопрос | Приёмы |
